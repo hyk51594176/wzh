@@ -1,0 +1,152 @@
+@import "~@/assets/css/theme.less";
+html,
+body {
+    background: #f5f5f4;
+    color: #6E6E6E;
+    overflow: hidden;
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
+}
+#app,.mapp,.homeview{
+    overflow: hidden;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+.banyuan{
+    border-radius: 30px
+}
+.m-label{
+    color:@mlable-color
+}
+.m-title{
+    color: @mtitle-color
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section{
+  display: block
+}
+
+
+
+.pop-in-enter-active,
+.pop-in-leave-active,
+.pop-out-enter-active,
+.pop-out-leave-active {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: #fbf9fe;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0.6, 0.2, 1);
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, transform;
+    
+}
+
+ 
+.homeview {
+    height:100%;
+  }
+.pop-out-enter {
+    transform: translate3d(-33%, 0, 0);
+    opacity: 1;
+    z-index: 1;
+}
+
+.pop-out-enter-to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    z-index: 1;
+}
+
+.pop-out-leave {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    z-index: 2;
+}
+
+.pop-out-leave-to {
+    transform: translate3d(100%, 0, 0);
+    opacity: 1;
+    z-index: 2;
+}
+
+.pop-in-enter {
+    transform: translate3d(100%, 0, 0);
+    opacity: 1;
+    z-index: 2;
+}
+
+.pop-in-enter-to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    z-index: 2;
+}
+
+.pop-in-leave {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.pop-in-leave-to {
+    transform: translate3d(-33%, 0, 0);
+    opacity: 0;
+    z-index: 1;
+}
+
+.pop-out-leave-active
+.pop-in-enter-active, {
+    box-shadow: -5px 0 3px rgba(0, 0, 0, .15);
+}
+.page-conner{
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+    height: calc(100% - 45px);
+}
+ 
+.home.page-conner{
+    height:calc(100% - 98px)
+}
+.primary{
+    background: @primary-color !important;
+    color:#ffffff !important;
+}
+.primary-color{
+    color:@primary-color !important;
+}
+.van-tabbar-item--active {
+    color: @primary-color !important
+}
+.pull-right{
+    float: right
+}
+.pull-left{
+    float: left
+}
+.dan{
+    overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+}
